@@ -1,0 +1,25 @@
+<h1>
+    @{
+        var nome = "Kerley Santarém";
+    }
+
+    @nome
+
+</h1>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://http2.mlstatic.com/D_NQ_NP_814216-MLB53972248295_022023-W.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">BMW M3 3.0</h5>
+    <p class="card-text">BMW - MOTOR 3.0 BITURBO COM 431 CV - CÂMBIO DE 7 VELOCIDADES COM PADDLE SHIFT.</p>
+    <a href="#" class="btn btn-primary">Detalhes</a>
+  </div>
+</div>
+
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+  <div class="card-header">@ViewData["Cabecalho"]</div>
+  <div class="card-body">
+    <h5 class="card-title">@ViewData["Titulo"]</h5>
+    <p class="card-text">@ViewData["Descricao"]</p>
+  </div>
+</div>
