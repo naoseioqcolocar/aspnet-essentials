@@ -11,12 +11,6 @@ public class CursoController:Controller{
         c1.TituloInterno = "Desenvolvedor C#";
         c1.TituloMarketing = "Crie aplicativos multiplataformas";
 
-        int c;
-        for(c=0; c<10; c++){
-            c=(c+1)/2;
-        }
-        ViewData["valorc"] = c;
-
         ViewData["desc"] = c1.Descricao;
         ViewData["TitInt"] = c1.TituloInterno;
         ViewData["TitMark"] = c1.TituloMarketing;
