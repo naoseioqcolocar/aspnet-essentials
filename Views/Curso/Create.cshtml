@@ -1,0 +1,30 @@
+
+
+<h1>@ViewData["titulo"]</h1>
+
+<form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Título Interno</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Título Marketing</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">Lembre-se de utilizar um título incisivo</div>
+  </div>
+
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Descrição</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+
+<div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Eu li e concordo com os <a href="https://www.jusbrasil.com.br/" target="_blank">termos de uso</a></label>
+</div>
+
+  <button type="submit" class="btn btn-primary">Cadastrar</button>
+     <button type="clean" class="btn btn-primary">Limpar</button>
+</form>
+
+@ViewBag.DataHora

@@ -11,9 +11,13 @@ public class CursoController:Controller{
         c1.TituloInterno = "Desenvolvedor C#";
         c1.TituloMarketing = "Crie aplicativos multiplataformas";
 
-        ViewData["desc"] = c1.Descricao;
-        ViewData["TitInt"] = c1.TituloInterno;
-        ViewData["TitMark"] = c1.TituloMarketing;
+        ViewData["curso"]=c1;
+        return View();
+    }
+
+    public IActionResult Create(){
+        ViewData ["titulo"] = "Cadastro de Cursos";
+        ViewBag.DataHora = DateTime.Now;
         return View();
     }
 
